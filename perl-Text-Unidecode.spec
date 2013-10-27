@@ -6,6 +6,7 @@
 %define		pnam	Unidecode
 %include	/usr/lib/rpm/macros.perl
 Summary:	Text::Unidecode -- US-ASCII transliterations of Unicode text
+Summary(pl.UTF-8):	Text::Unidecode - transliteracje US-ASCII dla tekstu Unicode
 Name:		perl-Text-Unidecode
 Version:	0.04
 Release:	1
@@ -29,6 +30,14 @@ universally displayable characters between 0x00 and 0x7F). The
 representation is almost always an attempt at transliteration -- i.e.,
 conveying, in Roman letters, the pronunciation expressed by the text
 in some other writing system.
+
+%description -l pl.UTF-8
+Text::Unidecode udostępnia funkcje unidecode(...) przyjmującą dane
+zakodowane w Unicode i próbującą stworzyć ich reprezentację przy
+użyciu znaków US-ASCII (czyli uniwersalnych znaków zdatnych do
+wyświetlenia, o kodach od 0x00 do 0x7F). Reprezentacja jest prawie
+zawsze próbą transliteracji - czyli przybliżeniem znakami łacińskimi
+wymowy tekstu wyrażonego w innym systemie pisma.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
