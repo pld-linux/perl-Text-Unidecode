@@ -8,13 +8,13 @@
 Summary:	Text::Unidecode -- US-ASCII transliterations of Unicode text
 Summary(pl.UTF-8):	Text::Unidecode - transliteracje US-ASCII dla tekstu Unicode
 Name:		perl-Text-Unidecode
-Version:	0.04
+Version:	1.27
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Text/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	06f6bddb396ab386aa66a2bc8a04df76
+# Source0-md5:	7cd6b6591fcfceb9d07260df18599a6d
 URL:		http://search.cpan.org/dist/Text-Unidecode/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
