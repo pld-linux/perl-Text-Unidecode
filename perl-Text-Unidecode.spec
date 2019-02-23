@@ -8,20 +8,22 @@
 Summary:	Text::Unidecode -- US-ASCII transliterations of Unicode text
 Summary(pl.UTF-8):	Text::Unidecode - transliteracje US-ASCII dla tekstu Unicode
 Name:		perl-Text-Unidecode
-Version:	1.27
+Version:	1.30
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Text/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	7cd6b6591fcfceb9d07260df18599a6d
-URL:		http://search.cpan.org/dist/Text-Unidecode/
+Source0:	https://cpan.metacpan.org/modules/by-module/Text/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	31cca8505bd74ed9d8036cdc84c808ca
+URL:		https://metacpan.org/release/Text-Unidecode
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-build-macros >= 1.737
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoprov	perl(Text::Unidecode::x..)
+# avoid extremely long provides list
+%define		_noautoprov_perl	Text::Unidecode::x..
 
 %description
 Text::Unidecode provides a function, unidecode(...) that takes Unicode
@@ -51,6 +53,7 @@ wymowy tekstu wyrażonego w innym systemie pisma.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
