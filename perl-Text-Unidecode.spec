@@ -4,7 +4,6 @@
 
 %define		pdir	Text
 %define		pnam	Unidecode
-%include	/usr/lib/rpm/macros.perl
 Summary:	Text::Unidecode -- US-ASCII transliterations of Unicode text
 Summary(pl.UTF-8):	Text::Unidecode - transliteracje US-ASCII dla tekstu Unicode
 Name:		perl-Text-Unidecode
