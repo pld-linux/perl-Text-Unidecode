@@ -16,7 +16,7 @@ Source0:	https://cpan.metacpan.org/modules/by-module/Text/%{pdir}-%{pnam}-%{vers
 # Source0-md5:	31cca8505bd74ed9d8036cdc84c808ca
 URL:		https://metacpan.org/release/Text-Unidecode
 BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	rpm-build-macros >= 1.737
+BuildRequires:	rpmbuild(macros) >= 1.737
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
